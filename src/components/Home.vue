@@ -1,6 +1,6 @@
 <template>
     <div id="home">
-        <p>Software Engineer</p>
+        <p class="title">Software Engineer</p>
         <section>
             <button name="about">About Me</button>
             <button name="work">My Work</button>
@@ -21,7 +21,7 @@ export default {
     display: flex;
     align-self: center;
     flex-direction: column;
-    p {
+    .title {
         font-size: 32px;
     }
 
