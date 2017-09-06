@@ -2,8 +2,8 @@
     <div id="home">
         <p class="title">Software Engineer</p>
         <section>
-            <button name="about">About Me</button>
-            <button name="work">My Work</button>
+            <router-link to="/about" tag="button">About Me</router-link>
+            <router-link to="/work" tag="button">My Work</router-link>
         </section>
     </div>
 </template>
@@ -33,10 +33,14 @@ export default {
         height: 50px;
         text-align: left;
         font-size: 16px;
+        transition: background .2s ease-in;
+        transition: color .2s ease-in;
     }
 
     button:hover {
         cursor: pointer;
+        background: black;
+        color: white;
     }
 }
 
