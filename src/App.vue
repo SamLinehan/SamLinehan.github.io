@@ -1,6 +1,14 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <header>
+      <router-link to="/" class="nameHeader"><h1>SAM LINEHAN</h1></router-link>
+      <nav>
+        <router-link to="/">Home</router-link>
+        <router-link to="/work">Work</router-link>
+        <router-link to="/resume">Resume</router-link>
+        <router-link to="/about">About</router-link>           
+      </nav>                 
+    </header>
     <router-view></router-view>
   </div>
 </template>
@@ -11,13 +19,49 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+// Variables
+$header-font: 'Montserrat', sans-serif;
+$main-font: 'Open Sans', sans-serif;
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  font-family: 'open sans';
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  .nameHeader {
+    color: inherit;
+    text-decoration: none;
+    font-family: $header-font;
+  }
+
+  nav {
+    a, a:visited, a:active {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:hover, u {
+      text-decoration: none;
+    }
+
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    font-weight: 200;
+  }
+
 }
 </style>
