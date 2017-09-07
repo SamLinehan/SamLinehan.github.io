@@ -1,9 +1,9 @@
 <template>
     <div id="home">
         <p class="title">Software Engineer</p>
-        <section>
-            <router-link to="/about" tag="button">About Me</router-link>
+        <section>            
             <router-link to="/work" tag="button">My Work</router-link>
+            <router-link to="/about" tag="button">About Me</router-link>
         </section>
     </div>
 </template>

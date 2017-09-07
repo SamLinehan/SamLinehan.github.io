@@ -84,7 +84,7 @@
         }
 
         .github:hover {
-            color: #039be5;
+            color: #00C853;
         }
 
         .web:hover {
