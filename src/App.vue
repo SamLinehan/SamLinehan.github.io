@@ -2,6 +2,9 @@
   <div id="app">
     <header>
       <router-link to="/" class="nameHeader"><h1>SAM LINEHAN</h1></router-link>
+      <div class="betaDiv">
+        <h3>Beta Website</h3>
+      </div>
       <nav>
         <router-link to="/">Home</router-link>
         <router-link to="/work">Work</router-link>
@@ -42,6 +45,12 @@ header {
     color: inherit;
     text-decoration: none;
     font-family: $header-font;
+  }
+
+  .betaDiv {
+    h3 {
+      margin-top: 0px;
+    }
   }
 
   nav {
